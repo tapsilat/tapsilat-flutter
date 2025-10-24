@@ -1,0 +1,11 @@
+linter:
+  rules:
+    - prefer_single_quotes
+    - always_declare_return_types
+    - avoid_print
+    - unnecessary_new
+    - prefer_final_fields
+    - type_annotate_public_apis
+    - public_member_api_docs
+    - lines_longer_than_80_chars
+    - prefer_const_constructors

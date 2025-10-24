@@ -1,0 +1,29 @@
+name: tapsilat
+description: Flutter SDK for Tapsilat.
+version: 0.1.0
+homepage: https://github.com/tapsilat
+repository: https://github.com/tapsilat/tapsilat-flutter
+issue_tracker: https://github.com/tapsilat/tapsilat-flutter/issues
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+  flutter: '>=3.26.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  # Add your package dependencies here
+dev_dependencies:
+  test: ^1.26.3
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: tapsilat
+        pluginClass: TapsilatPlugin
+      ios:
+        pluginClass: TapsilatPlugin
+      web:
+        pluginClass: TapsilatPlugin
+      macos:
+        pluginClass: TapsilatPlugin
+      linux:
+        pluginClass: TapsilatPlugin
