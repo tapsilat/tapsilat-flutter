@@ -2,6 +2,7 @@
 
 #include <flutter_linux/flutter_linux.h>
 #include <gtk/gtk.h>
+#include <sys/utsname.h>
 
 namespace {
 
@@ -15,6 +16,20 @@ G_DEFINE_TYPE(TapsilatPlugin, tapsilat_plugin, g_object_get_type())
 
 // Handles method channel calls by answering not implemented.
 static void HandleMethodCall(TapsilatPlugin* self, FlMethodCall* method_call) {
+  const gchar* method = fl_method_call_get_name(method_call);
+
+  if (g_strcmp0(method, "getPlatformVersion") == 0) {
+    struct utsname uname_data;
+    uname(&uname_data);
+    g_autofree gchar* version =
+        g_strdup_printf("Linux %s", uname_data.version);
+    g_autoptr(FlValue) result_value = fl_value_new_string(version);
+    g_autoptr(FlMethodResponse) response = FL_METHOD_RESPONSE(
+        fl_method_success_response_new(result_value));
+    fl_method_call_respond(method_call, response, nullptr);
+    return;
+  }
+
   g_autoptr(FlMethodResponse) response =
       FL_METHOD_RESPONSE(fl_method_not_implemented_response_new());
   fl_method_call_respond(method_call, response, nullptr);

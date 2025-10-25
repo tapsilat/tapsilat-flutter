@@ -1,0 +1,17 @@
+name: tapsilat_example
+description: Demonstrates how to use the tapsilat plugin.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  tapsilat:
+    path: ../
+
+flutter:
+  uses-material-design: true

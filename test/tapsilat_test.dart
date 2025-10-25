@@ -1,5 +1,4 @@
 import 'package:test/test.dart';
-import 'package:tapsilat/tapsilat.dart';
 
 void main() {
   group('Tapsilat Tests', () {
