@@ -28,4 +28,4 @@ flutter:
       linux:
         pluginClass: TapsilatPlugin
       windows:
-        dartPluginClass: TapsilatPlugin
+        pluginClass: TapsilatPluginCApi
