@@ -12,6 +12,7 @@ dependencies:
 
   tapsilat:
     path: ../
+  webview_flutter: ^4.7.0
 
 flutter:
   uses-material-design: true

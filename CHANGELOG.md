@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.3.0] - 2025-11-20
+### Added
+- `TapsilatOrderResponse.checkoutUri` helper with hosted checkout URL support
+- Example WebView that opens `checkout.tapsilat.dev` using the reference ID
+- README guidance on presenting the hosted checkout
+
+## [0.2.0] - 2025-11-20
+### Added
+- HTTP client for creating orders plus strongly typed request/response models
+- Example application that demonstrates creating an order from Flutter
+- Documentation and tests that cover the new workflow
+
+### Changed
+- Replaced the unused method-channel stub with the new REST client
+
 ## [0.1.2] - 2024-06-25
 ### Added
 - Added windows and linux support
