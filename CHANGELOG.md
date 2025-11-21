@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.3.1] - 2025-11-25
+### Fixed
+- Github action added
+
 ## [0.3.0] - 2025-11-20
 ### Added
 - `TapsilatOrderResponse.checkoutUri` helper with hosted checkout URL support
