@@ -1,6 +1,6 @@
 name: tapsilat
 description: Flutter SDK for Tapsilat, Create orders and retrieve secure checkout URLs
-version: 0.3.1
+version: 0.3.2
 homepage: https://github.com/tapsilat
 repository: https://github.com/tapsilat/tapsilat-flutter
 issue_tracker: https://github.com/tapsilat/tapsilat-flutter/issues

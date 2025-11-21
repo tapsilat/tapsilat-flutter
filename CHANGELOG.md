@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.3.1] - 2025-11-25
+## [0.3.2] - 2025-11-25
 ### Fixed
 - Github action added
 
