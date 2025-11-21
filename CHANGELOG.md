@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.3.3] - 2025-11-25
+### Fixed
+- Updated publish GitHub action to trigger on version tags
+
 ## [0.3.2] - 2025-11-25
 ### Fixed
 - Github action added
